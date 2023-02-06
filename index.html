@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiraVe!</title>
+    <link rel="stylesheet" href="style.css" style="text/css">
+    
+</head>
+<body>
+
+    <!-- !PASO 1:
+    *    Es importante al inicio testeamos la fuente de la letra con distintos 
+    *    (h1-h6, p) con la  intención de  saber  como se veía, buena práctica.
+
+    ?                                                                   Testing->Comentado _X_ 
+    <h1>Heading 1 example</h1>
+    <h2>Heading 2 example</h2>
+    <h3>Heading 3 example</h3>
+    <h4>Heading 4 example</h4>
+    <h5>Heading 5 example</h5>
+    <h6>Heading 6 example</h6>
+    <p>Paragraph example</p>                                                                  -->
+
+    <!-- !PASO 2:
+    *    Empezar  a  dividir  apartados  por  secciones,  es una buena practica.
+    *    Se usaran las etiquetas <section> para difereciarla de otras secciones.              -->
+    <section id="header">
+        <!-- *LOGO                                                       Falta->Desarrollar___-->
+        <a href="#"><img src="assets/logo/logo1.png" class="logo" alt=""></a>
+        <div>
+            <!--!PASO 3: navbar -->
+            <ul id="navbar">
+                <!--* Elementos de navbar: -->
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- *Boton de tienda -->
+                
+                <li>
+                    <!--!PASO 4: search an icon as svg-->
+                    <a href="cart.html">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                        <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                        </defs>
+                        <g id="cart">
+                        <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                        <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                        <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                        <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                        </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+    </section>
+    <script src="script.js"></script>
+</body> 
+</html>
