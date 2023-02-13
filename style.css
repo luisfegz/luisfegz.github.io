@@ -53,6 +53,19 @@ p {
     margin: 40px 0;
 }
 
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
 
 /*!============ Header Start =============*/
 #header {
@@ -149,7 +162,7 @@ p {
     width: 180px;
     text-align: center;
     padding:  25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
     border: 1px solid #cce7d0;
     border-radius: 4px;
     margin: 15px 0;
@@ -273,6 +286,38 @@ p {
     
 }
 
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("assets/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+/*! Empezamos a poner el color de los (h1-h6) */
+#banner h4 {
+    color: #eee ;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #eee ;
+    font-size: 30px;
+    padding-bottom: 10px 0;
+}
+
+#banner h2 span {
+    color: #ef3636 ;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: #fff;
+}
 /**============== Shop Page ==============*/
 
 /*?=========== Single Product ============*/
