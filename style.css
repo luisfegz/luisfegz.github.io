@@ -557,9 +557,100 @@ footer .copyright  {
     text-align: center;
 }
 /**============== Shop Page ==============*/
+#page-header {
+    background-image: url("assets/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
 
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #ffb647;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
 /*?=========== Single Product ============*/
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
 
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+} 
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40ppx 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{ 
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+#prodetails .single-pro-details input:focus {
+    outline: none; 
+}
+
+#prodetails .single-pro-details button {
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+}
 /*!============= Blog Page ===============*/
 
 /*============= About Page ===============*/
@@ -654,6 +745,10 @@ footer .copyright  {
         min-width: 100%;
         height: 35vh;
     }
+    /* ! Este lo quise añadir porque se veia feo*/
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
 
     #banner3 {
         padding: 0 40px;
@@ -666,6 +761,72 @@ footer .copyright  {
     
     #newsletter .form {
         width: 70%;
+    }
+}
+@media (max-width: 477px) {
+    
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55% ;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+    }
+
+    #newsletter {
+        padding: 40px 20px; ;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+
+    footer .copyright {
+        text-align: start;
     }
 }
 

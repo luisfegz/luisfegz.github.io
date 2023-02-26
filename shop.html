@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiraVe!</title>
+    <link rel="stylesheet" href="style.css" style="text/css"/>
+    
+</head>
+<body>
+
+    <!-- !PASO 1:
+    *    Es importante al inicio testeamos la fuente de la letra con distintos 
+    *    (h1-h6, p) con la  intención de  saber  como se veía, buena práctica.
+    ?                                                                   Testing->Comentado _X_ 
+    <h1>Heading 1 example</h1>
+    <h2>Heading 2 example</h2>
+    <h3>Heading 3 example</h3>
+    <h4>Heading 4 example</h4>
+    <h5>Heading 5 example</h5>
+    <h6>Heading 6 example</h6>
+    <p>Paragraph example</p>                                                                  -->
+    <!-- !PASO 2:
+    *    Empezar  a  dividir  apartados  por  secciones,  es una buena practica.
+    *    Se usaran las etiquetas <section> para difereciarla de otras secciones.              -->
+    <section id="header">
+        <!-- *LOGO                                                       Falta->Desarrollar___-->
+        <a href="#"><img src="assets/logo/logo.png" class="logo" alt=""></a>
+        <div>
+            <!--!PASO 3: navbar -->
+            <ul id="navbar">
+                <!--* Elementos de navbar: -->
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- *Boton de tienda -->
+                
+                <li id="lg-bag">
+                    <!--!PASO 4: search an icon as svg-->
+                    <a href="cart.html">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                        <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                        </defs>
+                        <g id="cart">
+                        <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                        <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                        <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                        <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                        </g>
+                        </svg>
+                    </a>
+                </li>
+                <a href="#" id="close"><i>
+                    <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="16px" height="16px">    <path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"/></svg>
+                </i></a>
+            </ul>
+        </div>
+<!-- * Aqui inserto el hamburger menu -->
+        <div id="mobile">
+            <li>
+                <a href="cart.html">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg>
+                </a>
+            </li>
+            <i id="bar"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="32px" height="32px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg></i>
+        </div>
+    </section>
+    <!-- !PASO 4: Crear como el texto de fondo con la imagen -->
+    <section id="page-header">
+        
+        <h2>#stayhome</h2>
+        
+        <p>Save more with coupons & up to 70% off!</p>
+        
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <!--! PASO 5: A partir de aqui copia hasta donde diga 'AQUI' para pegar despues como otro producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f1.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!-- * HASTA AQUI para productos, 2do Producto-->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f2.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--*3er Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f3.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 4to Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f4.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 5to Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f5.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 6to Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f6.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 7mo Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f7.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 8vo Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/f8.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+
+            <!--! PASO 6: New Arrivals A partir de aqui copia hasta donde diga 'AQUI' para pegar despues como otro producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n1.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!-- * HASTA AQUI para productos, 2do Producto-->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n2.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--*3er Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n3.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 4to Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n4.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 5to Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n5.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 6to Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n6.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 7mo Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n7.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+            <!--* 8vo Producto -->
+            <div class="pro">
+                <!-- ? Ingreso los productos con su imagen y descripcion -->
+                <img src="assets/products/n8.jpg" alt="" >
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <!-- No tenemos como tal esto de aqui-->
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal sa-shopping-cart cart"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="18px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+                    </defs>
+                    <g id="cart">
+                    <circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/>
+                    <circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/>
+                    <path class="cls-1" d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"/>
+                    <polyline class="cls-1" points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"/>
+                    </g>
+                    </svg></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about latest shop and <span>special offers</span></p>.
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+    
+    <footer class="section-p1"> 
+        <div class="col">
+            <img class="logo" src="assets/logo/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> --- --- </p>
+            <p><strong>Phone:</strong> --- --- </p>
+            <p><strong>Hours:</strong> --- --- </p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="22px" height="12px"><path d="M42,11.5v25c0,3.03-2.47,5.5-5.5,5.5H31V28h3.62c0.51,0,0.94-0.38,1-0.88l0.37-3c0.04-0.28-0.05-0.57-0.24-0.78 C35.56,23.12,35.29,23,35,23h-4v-3.5c0-1.1,0.9-2,2-2h2c0.55,0,1-0.45,1-1v-3.38c0-0.51-0.4-0.94-0.91-0.99 C35.03,12.12,33.62,12,31.83,12c-4.4,0-6.83,2.62-6.83,7.37V23h-4c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h4v14H11.5 C8.47,42,6,39.53,6,36.5v-25C6,8.47,8.47,6,11.5,6h25C39.53,6,42,8.47,42,11.5z"/></svg></i>
+                    <i><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="12px" height="48px">    <path d="M21.634,4.031c-0.815,0.385-2.202,1.107-2.899,1.245c-0.027,0.007-0.049,0.016-0.075,0.023 c-0.813-0.802-1.927-1.299-3.16-1.299c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.218,0-5.568-1.679-7.327-3.837 C3.438,4.873,3.188,5.024,3.136,5.23C3.019,5.696,2.979,6.475,2.979,7.031c0,1.401,1.095,2.777,2.8,3.63 c-0.314,0.081-0.66,0.139-1.02,0.139c-0.424,0-0.912-0.111-1.339-0.335c-0.158-0.083-0.499-0.06-0.398,0.344 c0.405,1.619,2.253,2.756,3.904,3.087c-0.375,0.221-1.175,0.176-1.543,0.176c-0.136,0-0.609-0.032-0.915-0.07 c-0.279-0.034-0.708,0.038-0.349,0.582c0.771,1.167,2.515,1.9,4.016,1.928c-1.382,1.084-3.642,1.48-5.807,1.48 c-0.438-0.01-0.416,0.489-0.063,0.674C3.862,19.504,6.478,20,8.347,20C15.777,20,20,14.337,20,8.999 c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.589-0.425,1.491-1.163,1.947-1.728c0.155-0.192,0.03-0.425-0.181-0.352 c-0.543,0.189-1.482,0.555-2.07,0.625c1.177-0.779,1.759-1.457,2.259-2.21C22.109,4.168,21.895,3.907,21.634,4.031z"/></svg></i>
+                    <i><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="12px" height="30px">    <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"/></svg></i>
+                <!-- FALTA agregar pinteres y Instagram-->
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlis</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install"></div>
+            <h4>Install App</h4> 
+            <p>Install App Store or Google Pay</p>
+            <div class="row">
+                <img src="assets/pay/app.jpg" alt="">
+                <img src="assets/pay/pay.png" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="assets/pay/play.jpg" alt="">
+
+            <div class="copyright">
+                <p>©2023. ChampionStore. Dropshipping & Ecommerce</p>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body> 
+</html>
