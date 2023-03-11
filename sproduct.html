@@ -114,7 +114,6 @@
         <h2>Featured Products</h2>
         <p>Summer Collection New Morden Design</p>
         <div class="pro-container">
-            <!--! PASO 6: New Arrivals A partir de aqui copia hasta donde diga 'AQUI' para pegar despues como otro producto -->
             <div class="pro">
                 <!-- ? Ingreso los productos con su imagen y descripcion -->
                 <img src="assets/products/n1.jpg" alt="" >
@@ -299,11 +298,26 @@
     </footer>
 
     <!-- todo Scrtpt para cambiar la imagen seleccionada -->
+    <!-- *This section will provide the change of product reflected by one click -->
     <script>
         var MainImg = document.getElementById("MainImg");
         var smallimg = document.getElementsByClassName("small-img");
+        
+        smallimg[0].onclick = function() {
+            MainImg.src = smallimg[0].src;
+        }
+        
+        smallimg[1].onclick = function() {
+            MainImg.src = smallimg[1].src;
+        }
+        
+        smallimg[2].onclick = function() {
+            MainImg.src = smallimg[2].src;
+        }
 
-
+        smallimg[3].onclick = function() {
+            MainImg.src = smallimg[3].src;
+        }
     </script>
 
     <script src="script.js"></script>
