@@ -1,8 +1,10 @@
 import React from 'react';
 // link
 import { Link } from 'react-router-dom'
+
 const Product = ({ product }) => {
-  // console.log(product);
+  console.log(product);
+  console.log(product.attributes.isNew);
   return (
     <Link>
       <div className='grad w-full h-[362] rounded-[8px] overflow-hidden 
@@ -26,10 +28,14 @@ const Product = ({ product }) => {
         </div>
         {/* text */}
         <div>
-          {/* category title */}
-          <div>category title</div>
+          {/* NO SE PUEDE TIRA UN ERRORcategory title */}
+          {/* <div>
+            {product.attributes.categorie.data[0].attributes.title}
+          </div> */}
           {/* title */}
-          <div>title</div>
+          <div>
+            {product.attributes.title.substring(0,35)}
+          </div>
           {/* price */}
           <div>price</div>
         </div>
